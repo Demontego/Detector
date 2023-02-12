@@ -1,0 +1,19 @@
+backbone: d0
+head: efficientdet
+image_size: 512
+labels: null
+learning_rate: 0.0001
+lr_scheduler: null
+metrics:
+- !!python/object:icevision.metrics.coco_metric.coco_metric.COCOMetric
+  _preds: []
+  _records: []
+  iou_thresholds: null
+  metric_type: !!python/object/apply:icevision.metrics.coco_metric.coco_metric.COCOMetricType
+  - bbox
+  print_summary: false
+  show_pbar: false
+num_classes: 91
+optimizer: Adam
+predict_kwargs: null
+pretrained: true
